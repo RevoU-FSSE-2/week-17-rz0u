@@ -1,6 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config();
-const functions = require("firebase-functions");
+import functions from "firebase-functions";
+import { onRequest } from "firebase-functions/v2/https";
+// const functions = require("firebase-functions");
+// const { onRequest } = require("firebase-functions/v2/https");
 import express from "express";
 import { userRouter } from "./routes/user-router.js";
 import { transactionRouter } from "./routes/transaction-router.js";
@@ -36,4 +39,4 @@ app.get("/", (req, res) => {
 //   console.log(`server is running on localhost:${port}`);
 // });
 
-exports.week_17_rayhanzou = functions.https.onRequest(app);
+export const week_17_rayhanzou = functions.https.onRequest(app);
