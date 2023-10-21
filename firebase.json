@@ -12,7 +12,7 @@
     }
   ],
   "hosting": {
-    "site": "week-17-rayhanzou",
+    "site": "week-17-rzou",
     "public": "frontend/dist",
     "ignore": [
       "firebase.json",

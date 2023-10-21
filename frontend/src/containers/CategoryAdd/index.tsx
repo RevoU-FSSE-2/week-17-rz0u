@@ -24,7 +24,7 @@ const CategoryAdd = () => {
       })
       .then((response) => {
         console.log("Add Successful", response.data);
-        window.location.replace("/category");
+        navigate("/category");
       });
   };
   return (
